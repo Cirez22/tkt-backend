@@ -5,7 +5,7 @@ const {
     getAllUsers,
     loginUser,
     signUpUser
-} = require('../controllers')
+} = require('../controllers/authController')
 
 router.get('/', getAllUsers);
 

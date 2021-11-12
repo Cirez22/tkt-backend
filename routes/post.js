@@ -1,4 +1,4 @@
-const express = reuiqre ('express');
+const express = require ('express');
 const router = express.Router();
 
 const {
@@ -7,7 +7,7 @@ const {
     createPost,
     updatePost,
     deletePost
-} = require('../controllers')
+} = require('../controllers/postController')
 
 router.get('/', getAllPost);
 
