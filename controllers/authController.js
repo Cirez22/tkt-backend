@@ -26,7 +26,7 @@ const getUserById = async (res,req) => {
 }
 
 const signUpUser = async (req,res) => {
-    const {email} = req.body
+    const {mail} = req.body
     const testEmail = await UserModel.findOne({email});
     if (testEmail) {
         return res.status(500).json({message:"Email already in use"});
